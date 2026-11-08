@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Navy — Kesederhanaan yang berkesan</title>
+  <meta name="description" content="Contoh situs modern, responsif, dan minimalis yang dibangun murni dengan HTML, CSS, dan JavaScript." />
+  <meta name="theme-color" content="#081b33" />
+  <link
+    rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23081b33'/%3E%3Ctext x='32' y='45' font-family='Arial,Helvetica,sans-serif' font-size='38' font-weight='700' fill='%23ffffff' text-anchor='middle'%3EN%3C/text%3E%3C/svg%3E"
+  />
+  <link rel="stylesheet" href="styles.css" />
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Lewati ke konten utama</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navigasi utama">
+      <a class="brand" href="#beranda" aria-label="Navy — kembali ke beranda">
+        <span class="brand__mark" aria-hidden="true">N</span>
+        <span class="brand__text">navy<span class="brand__dot">.</span></span>
+      </a>
+
+      <button
+        class="nav__toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="nav-menu"
+        aria-label="Buka menu navigasi"
+      >
+        <span class="nav__bar"></span>
+        <span class="nav__bar"></span>
+        <span class="nav__bar"></span>
+      </button>
+
+      <ul class="nav__menu" id="nav-menu">
+        <li><a class="nav__link is-active" href="#beranda" aria-current="true">Beranda</a></li>
+        <li><a class="nav__link" href="#fitur">Fitur</a></li>
+        <li><a class="nav__link" href="#kontak">Kontak</a></li>
+      </ul>
+
+      <a class="btn btn--navy btn--sm nav__cta" href="#kontak">
+        Mulai
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M5 12h14M13 6l6 6-6 6" />
+        </svg>
+      </a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="beranda" aria-labelledby="hero-title">
+      <div class="hero__grid" aria-hidden="true"></div>
+
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="eyebrow reveal">
+            <span class="eyebrow__dot"></span>
+            HTML · CSS · JavaScript
+          </p>
+
+          <h1 class="hero__title reveal" id="hero-title">
+            Kesederhanaan yang <span class="hero__accent">berkesan.</span>
+          </h1>
+
+          <p class="hero__lead reveal">
+            Satu halaman, tiga file, tanpa dependensi. Desain bersih dengan warna
+            navy dan putih yang menempatkan konten sebagai bintang utama.
+          </p>
+
+          <div class="hero__actions reveal">
+            <a class="btn btn--white" href="#fitur">
+              Jelajahi fitur
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14M13 6l6 6-6 6" />
+              </svg>
+            </a>
+            <a class="btn btn--ghost" href="#kontak">Hubungi kami</a>
+          </div>
+
+          <dl class="hero__stats reveal">
+            <div class="stat">
+              <dt>3</dt>
+              <dd>File murni</dd>
+            </div>
+            <div class="stat">
+              <dt>0</dt>
+              <dd>Dependensi</dd>
+            </div>
+            <div class="stat">
+              <dt>100%</dt>
+              <dd>Responsif</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="hero__visual reveal">
+          <div class="scene" aria-hidden="true">
+            <div class="window">
+              <div class="window__bar">
+                <span class="window__dot"></span>
+                <span class="window__dot"></span>
+                <span class="window__dot"></span>
+                <span class="window__address">navy.studio</span>
+              </div>
+
+              <div class="window__body">
+                <div class="window__side">
+                  <span class="side__logo"></span>
+                  <span class="side__line side__line--wide"></span>
+                  <span class="side__line"></span>
+                  <span class="side__line"></span>
+                  <span class="side__line side__line--short"></span>
+                </div>
+
+                <div class="window__main">
+                  <div class="window__head">
+                    <div>
+                      <span class="skeleton skeleton--title"></span>
+                      <span class="skeleton skeleton--sub"></span>
+                    </div>
+                    <span class="window__pill">Live</span>
+                  </div>
+
+                  <div class="chart">
+                    <span style="--h: 34%"></span>
+                    <span style="--h: 52%"></span>
+                    <span style="--h: 40%"></span>
+                    <span style="--h: 68%"></span>
+                    <span style="--h: 58%"></span>
+                    <span style="--h: 82%"></span>
+                    <span style="--h: 64%"></span>
+                    <span style="--h: 96%"></span>
+                  </div>
+
+                  <div class="window__tiles">
+                    <div class="tile">
+                      <span class="tile__label"></span>
+                      <span class="tile__value"></span>
+                    </div>
+                    <div class="tile">
+                      <span class="tile__label"></span>
+                      <span class="tile__value"></span>
+                    </div>
+                    <div class="tile">
+                      <span class="tile__label"></span>
+                      <span class="tile__value"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="float float--top">
+              <span class="float__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m5 13 4 4L19 7" />
+                </svg>
+              </span>
+              <span>
+                <strong>100% responsif</strong>
+                <small>Mulus di semua layar</small>
+              </span>
+            </div>
+
+            <div class="float float--bottom">
+              <span class="float__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M13 2 4.5 13.5H11l-1 8.5 8.5-11.5H12l1-8.5Z" />
+                </svg>
+              </span>
+              <span>
+                <strong>Ringan</strong>
+                <small>Tanpa framework</small>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FITUR ================= -->
+    <section class="features" id="fitur" aria-labelledby="fitur-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow eyebrow--dark">
+            <span class="eyebrow__dot"></span>
+            Mengapa sederhana
+          </p>
+          <h2 class="section-title" id="fitur-title">Sedikit bagian, banyak manfaat.</h2>
+          <p class="section-lead">
+            Setiap elemen punya alasan. Tanpa animasi berlebihan, tanpa kode
+            yang tidak terpakai.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="card reveal">
+            <span class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="7" y="2.5" width="10" height="19" rx="2.5" />
+                <path d="M10.5 5h3M11 18.5h2" />
+              </svg>
+            </span>
+            <h3>Responsif penuh</h3>
+            <p>
+              Tata letak menyesuaikan dari ponsel hingga layar lebar. Menu,
+              tipografi, dan jarak tetap nyaman dibaca.
+            </p>
+            <span class="card__tag">Mobile first</span>
+          </article>
+
+          <article class="card reveal">
+            <span class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M13 2 4.5 13.5H11l-1 8.5 8.5-11.5H12l1-8.5Z" />
+              </svg>
+            </span>
+            <h3>Ringan &amp; cepat</h3>
+            <p>
+              Tanpa framework dan tanpa pustaka tambahan. Hanya tiga file yang
+              dimuat langsung oleh browser.
+            </p>
+            <span class="card__tag">Tanpa dependensi</span>
+          </article>
+
+          <article class="card reveal">
+            <span class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="m12 3 9 5-9 5-9-5 9-5Z" />
+                <path d="m3 13 9 5 9-5" />
+              </svg>
+            </span>
+            <h3>Rapi &amp; mudah dirawat</h3>
+            <p>
+              Struktur, penamaan, dan gaya ditulis konsisten. Mudah dibaca,
+              diubah, lalu dikembangkan kembali.
+            </p>
+            <span class="card__tag">Kode bersih</span>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer" id="kontak">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand reveal">
+          <a class="brand brand--light" href="#beranda" aria-label="Navy — kembali ke beranda">
+            <span class="brand__mark" aria-hidden="true">N</span>
+            <span class="brand__text">navy<span class="brand__dot">.</span></span>
+          </a>
+          <p>
+            Mari wujudkan halaman yang cepat, rapi, dan menyenangkan untuk
+            digunakan — dari satu ide sederhana.
+          </p>
+          <ul class="socials" aria-label="Media sosial">
+            <li>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.63.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.57 2.34 1.12 2.91.86.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05a9.4 9.4 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.02 10.02 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <rect x="3" y="3" width="18" height="18" rx="5" />
+                  <circle cx="12" cy="12" r="4" />
+                  <circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <nav class="footer__col reveal" aria-labelledby="footer-nav-title">
+          <h2 id="footer-nav-title">Jelajahi</h2>
+          <ul>
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#fitur">Fitur</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__col reveal">
+          <h2>Kontak</h2>
+          <ul>
+            <li><a href="mailto:halo@navy.studio">halo@navy.studio</a></li>
+            <li><a href="tel:+622112345678">+62 21 1234 5678</a></li>
+            <li>Jakarta, Indonesia</li>
+          </ul>
+        </div>
+
+        <div class="footer__col footer__col--cta reveal">
+          <h2>Mulai proyek</h2>
+          <p>Punya ide? Kirim pesan singkat dan kita mulai dari hal kecil.</p>
+          <a class="btn btn--white btn--sm" href="mailto:halo@navy.studio?subject=Halo%20Navy">
+            Kirim pesan
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14M13 6l6 6-6 6" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© <span id="year">2026</span> Navy Studio. Hak cipta dilindungi.</p>
+        <p class="footer__note">Dibuat dengan HTML, CSS &amp; JavaScript.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
